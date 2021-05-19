@@ -1,7 +1,7 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: 'Wrap',
-  tagline: ' A decentralized bridge between ethereum and tezos. TRANSFER YOUR ERC20 AND ERC721 TOKENS FROM ETHEREUM TO THE TEZOS BLOCKCHAIN IN A DECENTRALIZED WAY ',
+  title: 'WRAP',
+  tagline: 'The future of banking',
   url: 'https://your-docusaurus-test-site.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -14,7 +14,7 @@ module.exports = {
       title: 'Wrap',
       logo: {
         alt: 'My Site Logo',
-        src: 'img/wrap.svg',
+        src: 'img/logo.png',
       },
       items: [
         {
