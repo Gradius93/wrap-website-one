@@ -5,7 +5,15 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import { Grid } from '../components/Grid'
 import { Container } from '../components/Container'
 
-
+const Button = (props) => (
+    <a
+        className={props.className}
+        href={props.href}
+        target={props.target}
+    >
+        {props.children}
+    </a>
+)
 
 const HomePlace = () => {
   const { siteConfig } = useDocusaurusContext()
@@ -51,7 +59,7 @@ const HomePlace = () => {
         <Logo img_src={`${baseUrl}img/logo.png`} />
         <div className="inner">
           <ProductTitle siteConfig={siteConfig} />
-          <div className="pluginWrapper buttonWrapper">
+          <div className="">
             <Button target="_blank" href={'https://app.tzwrap.com/wrap'}>WRAP NOW!</Button>
           </div>
         </div>
@@ -76,6 +84,7 @@ export default class Index extends React.Component {
                   imageAlign={props.imageAlign || 'center'}
                   contents={props.children}
                   layout={props.layout}
+                  whitepaperButton={props.withWhitepaperButton}
               />
           </Container>
       )
@@ -96,7 +105,7 @@ export default class Index extends React.Component {
       const About = () => (
           <React.Fragment>
               <div className="pTop">
-              <Block className="about" padding={['top']} background={'dark'} align="left">
+              <Block className="about" padding={['top']} background={'dark'} align="left" withWhitepaperButton={true}>
                   {[
                       {
                           title: '',
@@ -115,98 +124,33 @@ export default class Index extends React.Component {
       const Tokens = () => (
           <div className="tokens">
               <h3 className="tokensTitle">ERC 20 Tokens Supported: </h3>
-          <Block>
-              {[
-                  {
-                      image: `${baseUrl}img/black/1.png`,
-                      imageAlign: 'left',
-
-                  },
-                  {
-                      image: `${baseUrl}img/black/2.png`,
-                      imageAlign: 'left',
-                  },
-                  {
-                      image: `${baseUrl}img/black/3.png`,
-                      imageAlign: 'left',
-
-                  },
-                  {
-                      image: `${baseUrl}img/black/4.png`,
-                      imageAlign: 'left',
-
-                  },
-                  {
-                      image: `${baseUrl}img/black/5.png`,
-                      imageAlign: 'left',
-                  },
-                  {
-                      image: `${baseUrl}img/black/6.png`,
-                      imageAlign: 'left',
-                  },
-                  {
-                      image: `${baseUrl}img/black/7.png`,
-                      imageAlign: 'left',
-                  },
-                  {
-                      image: `${baseUrl}img/black/8.png`,
-                      imageAlign: 'left',
-                  },
-                  {
-                      image: `${baseUrl}img/black/9.png`,
-                      imageAlign: 'left',
-                  },
-                  {
-                      image: `${baseUrl}img/black/10.png`,
-                      imageAlign: 'left',
-                  },
-                  {
-                      image: `${baseUrl}img/black/11.png`,
-                      imageAlign: 'left',
-                  },
-                  {
-                      image: `${baseUrl}img/black/12.png`,
-                      imageAlign: 'left',
-                  },
-                  {
-                      image: `${baseUrl}img/black/13.png`,
-                      imageAlign: 'left',
-                  },
-                  {
-                      image: `${baseUrl}img/black/14.png`,
-                      imageAlign: 'left',
-                  },
-                  {
-                      image: `${baseUrl}img/black/15.png`,
-                      imageAlign: 'left',
-                  },
-                  {
-                      image: `${baseUrl}img/black/16.png`,
-                      imageAlign: 'left',
-                  },
-                  {
-                      image: `${baseUrl}img/black/17.png`,
-                      imageAlign: 'left',
-                  },
-                  {
-                      image: `${baseUrl}img/black/18.png`,
-                      imageAlign: 'left',
-                  },
-                  {
-                      image: `${baseUrl}img/black/19.png`,
-                      imageAlign: 'left',
-                  },
-
-                  {
-                      image: `${baseUrl}img/black/20.png`,
-                      imageAlign: 'left',
-                  },
-                  {
-                      image: `${baseUrl}img/black/21.png`,
-                      imageAlign: 'left',
-                  },
-              ]}
-          </Block>
+              <div className="tokens-line">
+                  <img src={`${baseUrl}img/black/1.png`}/>
+                  <img src={`${baseUrl}img/black/2.png`}/>
+                  <img src={`${baseUrl}img/black/3.png`}/>
+                  <img src={`${baseUrl}img/black/4.png`}/>
+                  <img src={`${baseUrl}img/black/5.png`}/>
+                  <img src={`${baseUrl}img/black/6.png`}/>
+                  <img src={`${baseUrl}img/black/7.png`}/>
+              </div>
+              <div className="tokens-line">
+                  <img src={`${baseUrl}img/black/8.png`}/>
+                  <img src={`${baseUrl}img/black/9.png`}/>
+                  <img src={`${baseUrl}img/black/10.png`}/>
+                  <img src={`${baseUrl}img/black/11.png`}/>
+                  <img src={`${baseUrl}img/black/12.png`}/>
+                  <img src={`${baseUrl}img/black/13.png`}/>
+                  <img src={`${baseUrl}img/black/14.png`}/>
+              </div>
+              <div className="tokens-line">
+                  <img src={`${baseUrl}img/black/15.png`}/>
+                  <img src={`${baseUrl}img/black/16.png`}/>
+                  <img src={`${baseUrl}img/black/17.png`}/>
+                  <img src={`${baseUrl}img/black/18.png`}/>
+                  <img src={`${baseUrl}img/black/19.png`}/>
+                  <img src={`${baseUrl}img/black/20.png`}/>
+                  <img src={`${baseUrl}img/black/21.png`}/>
+              </div>
           </div>
       )
 

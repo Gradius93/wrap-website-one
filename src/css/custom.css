@@ -167,6 +167,7 @@ body {
 
 .tokens {
   margin-top: 0;
+  padding-bottom: 40px;
   background-color: #FFD000;
 }
 
@@ -198,6 +199,18 @@ body {
   border: 3px solid #000000;
 }
 
+.aboutWhitepaperButton {
+  border: 3px solid #FFD000;
+  text-decoration: none;
+  font-size: 15px;
+  background-color: black;
+  color: #FFD000;
+  font-weight: bold;
+  box-shadow: 10px 10px #000000;
+  padding: 20px 40px;
+  transition: background-color 0.5s ease;
+}
+
 .gridBlock {
   padding: 0;
 }
@@ -207,12 +220,12 @@ body {
 
 }
 
+.gridBlock .sevenByGridBlock img,
 .gridBlock .fiveByGridBlock img,
 .gridBlock .fourByGridBlock img,
 .gridBlock .threeByGridBlock img,
 .gridBlock .twoByGridBlock img {
   max-width: 100%;
-  max-height: 92px;
 
 }
 
@@ -223,6 +236,9 @@ body {
 @media only screen and (max-width: 735px) {
   .gridBlock .fourByGridBlock {
     flex: 1 0 26%;
+  }
+  .gridBlock .fourByGridBlock {
+    flex: 1 0 13%;
   }
 }
 
@@ -255,6 +271,10 @@ body {
 
   .gridBlock .fourByGridBlock {
     flex: 1 0 20%;
+  }
+
+  .gridBlock .sevenByGridBlock {
+    flex: 1 0 11%;
   }
 
   h2 + .gridBlock {
@@ -418,5 +438,15 @@ details > summary {
   .productTitle {
     margin-top: 80px;
   }
+}
+
+.tokens-line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tokens-line img {
+  max-width: 120px;
 }
 

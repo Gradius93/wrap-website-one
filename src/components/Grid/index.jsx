@@ -2,6 +2,18 @@ import React from 'react'
 import classNames from 'classnames'
 import { MarkdownBlock } from '../MarkdownBlock'
 
+
+const Button = (props) => (
+    <a
+        className={props.className}
+        href={props.href}
+        target={props.target}
+    >
+        {props.children}
+    </a>
+)
+
+
 const renderBlockImage = (image, imageLink, imageAlt) => {
     if (!image) {
         return null
@@ -48,6 +60,7 @@ export const Grid = props => {
             alignRight: props.align === 'right',
             fourByGridBlock: props.layout === 'fourColumn',
             fiveByGridBlock: props.layout === 'fiveColumn',
+            sevenByGridBlock: props.layout === 'sevenColumn',
             imageAlignSide:
                 block.image &&
                 (block.imageAlign === 'left' || block.imageAlign === 'right'),
@@ -56,7 +69,7 @@ export const Grid = props => {
             imageAlignBottom: block.image && block.imageAlign === 'bottom',
             imageAlignLeft: block.image && block.imageAlign === 'left',
             threeByGridBlock: props.layout === 'threeColumn',
-            twoByGridBlock: props.layout === 'twoColumn',
+            twoByGridBlock: props.layout === 'twoColumn'
         })
 
         const topLeftImage =
@@ -73,6 +86,9 @@ export const Grid = props => {
                 <div className="blockContent">
                     {renderBlockTitle(block.title)}
                     <MarkdownBlock>{block.content}</MarkdownBlock>
+                    {props.whitepaperButton && <div className="inner aboutWhitepaperButton">
+                        <Button target="_blank" href={'https://app.tzwrap.com/wrap'}>WHITEPAPER</Button>
+                    </div>}
                 </div>
                 {bottomRightImage}
             </div>
