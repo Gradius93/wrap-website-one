@@ -5,6 +5,8 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import { Grid } from '../components/Grid'
 import { Container } from '../components/Container'
 
+
+
 const HomePlace = () => {
   const { siteConfig } = useDocusaurusContext()
   const { baseUrl } = siteConfig
@@ -32,15 +34,17 @@ const HomePlace = () => {
       </div>
   )
 
-  const Button = (props) => (
-      <a
-          className="button button--secondary"
-          href={props.href}
-          target={props.target}
-      >
-        {props.children}
-      </a>
-  )
+    const Button = (props) => (
+        <a
+            className="wrapButton"
+            href={props.href}
+            target={props.target}
+        >
+            {props.children}
+        </a>
+    )
+
+
 
   return (
       <PlaceContainer>
@@ -48,7 +52,7 @@ const HomePlace = () => {
         <div className="inner">
           <ProductTitle siteConfig={siteConfig} />
           <div className="pluginWrapper buttonWrapper">
-            <Button href={'/docs/'}>Learn More - Docs</Button>
+            <Button target="_blank" href={'https://app.tzwrap.com/wrap'}>WRAP NOW!</Button>
           </div>
         </div>
       </PlaceContainer>
@@ -63,7 +67,7 @@ export default class Index extends React.Component {
 
       const Block = (props) => (
           <Container
-              padding={['bottom', 'top']}
+              padding={['bottom']}
               id={props.id}
               background={props.background}
           >
@@ -80,7 +84,6 @@ export default class Index extends React.Component {
           <Container className="" >
               <div style={{ textAlign: 'center' }}>
                   <p>
-                      A decentralized bridge between Ethereum and Tezos. <br />
                       Transfer your ERC20 and ERC721 tokens from Ethereum to the Tezos blockchain in a decentralized way
 
 
@@ -92,7 +95,8 @@ export default class Index extends React.Component {
 
       const About = () => (
           <React.Fragment>
-              <Block className="about" background={'light'} align="left">
+              <div className="pTop">
+              <Block className="about" padding={['top']} background={'dark'} align="left">
                   {[
                       {
                           title: '',
@@ -104,11 +108,111 @@ export default class Index extends React.Component {
                       },
                   ]}
               </Block>
+              </div>
           </React.Fragment>
+      )
+
+      const Tokens = () => (
+          <div className="tokens">
+              <h3 className="tokensTitle">ERC 20 Tokens Supported: </h3>
+          <Block>
+              {[
+                  {
+                      image: `${baseUrl}img/black/1.png`,
+                      imageAlign: 'left',
+
+                  },
+                  {
+                      image: `${baseUrl}img/black/2.png`,
+                      imageAlign: 'left',
+                  },
+                  {
+                      image: `${baseUrl}img/black/3.png`,
+                      imageAlign: 'left',
+
+                  },
+                  {
+                      image: `${baseUrl}img/black/4.png`,
+                      imageAlign: 'left',
+
+                  },
+                  {
+                      image: `${baseUrl}img/black/5.png`,
+                      imageAlign: 'left',
+                  },
+                  {
+                      image: `${baseUrl}img/black/6.png`,
+                      imageAlign: 'left',
+                  },
+                  {
+                      image: `${baseUrl}img/black/7.png`,
+                      imageAlign: 'left',
+                  },
+                  {
+                      image: `${baseUrl}img/black/8.png`,
+                      imageAlign: 'left',
+                  },
+                  {
+                      image: `${baseUrl}img/black/9.png`,
+                      imageAlign: 'left',
+                  },
+                  {
+                      image: `${baseUrl}img/black/10.png`,
+                      imageAlign: 'left',
+                  },
+                  {
+                      image: `${baseUrl}img/black/11.png`,
+                      imageAlign: 'left',
+                  },
+                  {
+                      image: `${baseUrl}img/black/12.png`,
+                      imageAlign: 'left',
+                  },
+                  {
+                      image: `${baseUrl}img/black/13.png`,
+                      imageAlign: 'left',
+                  },
+                  {
+                      image: `${baseUrl}img/black/14.png`,
+                      imageAlign: 'left',
+                  },
+                  {
+                      image: `${baseUrl}img/black/15.png`,
+                      imageAlign: 'left',
+                  },
+                  {
+                      image: `${baseUrl}img/black/16.png`,
+                      imageAlign: 'left',
+                  },
+                  {
+                      image: `${baseUrl}img/black/17.png`,
+                      imageAlign: 'left',
+                  },
+                  {
+                      image: `${baseUrl}img/black/18.png`,
+                      imageAlign: 'left',
+                  },
+                  {
+                      image: `${baseUrl}img/black/19.png`,
+                      imageAlign: 'left',
+                  },
+
+                  {
+                      image: `${baseUrl}img/black/20.png`,
+                      imageAlign: 'left',
+                  },
+                  {
+                      image: `${baseUrl}img/black/21.png`,
+                      imageAlign: 'left',
+                  },
+              ]}
+          </Block>
+          </div>
       )
 
       const Wraponomics = () => (
           <React.Fragment>
+              <div className="pTop">
               <Block background={'light'} align="left">
                   {[
                       {
@@ -126,6 +230,7 @@ export default class Index extends React.Component {
                       },
                   ]}
               </Block>
+              </div>
           </React.Fragment>
       )
 
@@ -141,6 +246,7 @@ export default class Index extends React.Component {
             <div className='mainContainer'>
                 <SecondTagline />
                 <About />
+                <Tokens />
                 <Wraponomics />
 
             </div>

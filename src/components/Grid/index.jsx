@@ -47,6 +47,7 @@ export const Grid = props => {
             alignCenter: props.align === 'center',
             alignRight: props.align === 'right',
             fourByGridBlock: props.layout === 'fourColumn',
+            fiveByGridBlock: props.layout === 'fiveColumn',
             imageAlignSide:
                 block.image &&
                 (block.imageAlign === 'left' || block.imageAlign === 'right'),
@@ -79,7 +80,7 @@ export const Grid = props => {
     }
 
     return (
-        <div className="grid">{props.contents.map(renderBlock, this)}</div>
+        <div className="gridBlock">{props.contents.map(renderBlock, this)}</div>
     )
 }
 
