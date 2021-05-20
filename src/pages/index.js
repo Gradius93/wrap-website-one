@@ -34,7 +34,7 @@ const HomePlace = () => {
 
   const Button = (props) => (
       <a
-          className="button button--primary button--outline"
+          className="button button--secondary"
           href={props.href}
           target={props.target}
       >
