@@ -112,7 +112,7 @@ export default class Index extends React.Component {
                           title: '',
                           content:
                               "## About \n Through Wrap, users issue wTokens (wrapped tokens) which are representations\n of ERC20 and ERC721 tokens on the Tezos blockchain. wTokens can then be used\n on the Tezos blockchain, and their value is pegged to the original tokens.\n Wrap is a decentralized protocol, relying on a strong federation (the Signers\n Quorum) that guarantees the stability of the protocol, and a community of\n $WRAP governance token holders.",
-                          image: `${baseUrl}img/logo.png`,
+                          image: `${baseUrl}img/wrap3gif.gif`,
                           imageAlt: 'The problem (picture of a question mark)',
                           imageAlign: 'left',
                       },
@@ -152,6 +152,7 @@ export default class Index extends React.Component {
                   <img src={`${baseUrl}img/black/20.png`}/>
                   <img src={`${baseUrl}img/black/21.png`}/>
               </div>
+              <h3 className="tokensTitle">ERC721 Support - Coming Soon</h3>
           </div>
       )
 

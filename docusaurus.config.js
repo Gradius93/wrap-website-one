@@ -56,11 +56,7 @@ module.exports = {
           position: 'right',
           label: 'Docs',
         },
-        {
-          href: 'https://medium.com/bender-labs',
-          label: 'Blog',
-          position: 'right',
-        },
+
         {
           type: 'doc',
           docId: 'intro-faqs',
@@ -68,8 +64,13 @@ module.exports = {
           position: 'right',
         },
         {
-          href: 'https://github.com/bender-labs/wrap-dapp',
+          href: 'https://github.com/bender-labs',
           label: 'GitHub',
+          position: 'right',
+        },
+        {
+          href: 'https://medium.com/bender-labs',
+          label: 'Blog',
           position: 'right',
         },
       ],
@@ -92,7 +93,7 @@ module.exports = {
 
             {
               label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              href: 'https://discordapp.com/invite/bender_labs',
             },
             {
               label: 'Discourse',
@@ -100,11 +101,11 @@ module.exports = {
             },
             {
               label: 'Telegram',
-              href: 'https://web.telegram.org/#/im?p=@benderlabs'
+              href: 'https://t.me/benderlabs'
             },
             {
               label: 'Twitter',
-              href: 'https://twitter.com/benderlabs_',
+              href: 'https://twitter.com/Wrap_Protocol',
             },
           ],
         },
@@ -121,7 +122,7 @@ module.exports = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/bender-labs/wrap-dapp',
+              href: 'https://github.com/bender-labs/',
             },
           ],
         },
@@ -137,14 +138,9 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+            'https://github.com/bender-labs/wrapp-dapp',
         },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
-        },
+
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
