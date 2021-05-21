@@ -13,6 +13,7 @@
 }
 
 html[data-theme='dark'] {
+
   --ifm-link-color: #FFD000;
 }
 body {
@@ -200,16 +201,45 @@ body {
 }
 
 .aboutWhitepaperButton {
-  border: 3px solid #FFD000;
+  width: 35%;
+  border: 3px solid black;
   text-decoration: none;
   font-size: 15px;
-  background-color: black;
-  color: #FFD000;
+  background-color: #FFD000;
+  color: #000000;
   font-weight: bold;
-  box-shadow: 10px 10px #000000;
+  box-shadow: 10px 10px #ffd000;
   padding: 20px 40px;
   transition: background-color 0.5s ease;
 }
+
+.aboutWhitepaperButton:hover {
+  text-decoration: none;
+  background-color: black;
+  color: #ffd000;
+  border: 3px solid #ffd000;
+}
+
+.wraponomicsButton {
+  width: 35%;
+  border: 3px solid black;
+  text-decoration: none;
+  font-size: 15px;
+  background-color: #FFD000;
+  color: #000000;
+  font-weight: bold;
+  box-shadow: 10px 10px #ffd000;
+  padding: 20px 40px;
+  transition: background-color 0.5s ease;
+}
+
+.wraponomicsButton:hover {
+  text-decoration: none;
+  background-color: black;
+  color: #ffd000;
+  border: 3px solid #ffd000;
+}
+
 
 .gridBlock {
   padding: 0;
@@ -450,3 +480,6 @@ details > summary {
   max-width: 120px;
 }
 
+.footer {
+  text-decoration: none;
+}

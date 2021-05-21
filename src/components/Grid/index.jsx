@@ -86,8 +86,11 @@ export const Grid = props => {
                 <div className="blockContent">
                     {renderBlockTitle(block.title)}
                     <MarkdownBlock>{block.content}</MarkdownBlock>
-                    {props.whitepaperButton && <div className="inner aboutWhitepaperButton">
-                        <Button target="_blank" href={'https://app.tzwrap.com/wrap'}>WHITEPAPER</Button>
+                    {props.whitepaperButton && <div>
+                        <Button className="aboutWhitepaperButton" target="_blank" href={'https://uploads-ssl.webflow.com/605b954cee75fc72dfcdf42e/6062c8a1202d848191213859_Wrap%20Protocol%20-%20Whitepaper%20(1).pdf'}>WHITEPAPER</Button>
+                    </div>}
+                    {props.wraponomicsButton && <div className="pTop">
+                        <Button className="wraponomicsButton" target="_blank" href={'https://www.benderlabs.io/wrap-token'}>LEARN MORE ABOUT $WRAP</Button>
                     </div>}
                 </div>
                 {bottomRightImage}

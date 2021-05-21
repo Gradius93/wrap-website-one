@@ -85,6 +85,7 @@ export default class Index extends React.Component {
                   contents={props.children}
                   layout={props.layout}
                   whitepaperButton={props.withWhitepaperButton}
+                  wraponomicsButton={props.withWraponomicsButton}
               />
           </Container>
       )
@@ -157,7 +158,7 @@ export default class Index extends React.Component {
       const Wraponomics = () => (
           <React.Fragment>
               <div className="pTop">
-              <Block background={'light'} align="left">
+              <Block background={'light'} align="left" withWraponomicsButton={true}>
                   {[
                       {
                           title: '',

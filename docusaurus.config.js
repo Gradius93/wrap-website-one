@@ -62,7 +62,8 @@ module.exports = {
           position: 'right',
         },
         {
-          to: '/FAQ/',
+          type: 'doc',
+          docId: 'intro-faqs',
           label: 'FAQ',
           position: 'right',
         },
