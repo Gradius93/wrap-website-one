@@ -5,15 +5,6 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import { Grid } from '../components/Grid'
 import { Container } from '../components/Container'
 
-const Button = (props) => (
-    <a
-        className={props.className}
-        href={props.href}
-        target={props.target}
-    >
-        {props.children}
-    </a>
-)
 
 const HomePlace = () => {
   const { siteConfig } = useDocusaurusContext()
@@ -55,7 +46,7 @@ const HomePlace = () => {
 
 
   return (
-      <PlaceContainer>
+      <PlaceContainer >
         <Logo img_src={`${baseUrl}img/logo.png`} />
         <div className="inner">
           <ProductTitle siteConfig={siteConfig} />

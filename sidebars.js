@@ -37,16 +37,13 @@ module.exports = {
 
   ],
   faqs: [
-    'intro-faqs',
+    'Wrap-protocol',
       'how-wrap',
-      'what-wrap',
     {
       type: 'category',
       label: 'FAQs',
       items: [
           'new_file',
-          'what-wrap',
-          'how-wrap'
       ]
     }
   ]

@@ -21,13 +21,7 @@ const renderBlockImage = (image, imageLink, imageAlt) => {
 
     return (
         <div className="blockImage">
-            {imageLink ? (
-                <a href={imageLink}>
-                    <img src={image} alt={imageAlt} />
-                </a>
-            ) : (
-                <img src={image} alt={imageAlt} />
-            )}
+            <img src={image} alt={imageAlt} />
         </div>
     )
 }
@@ -74,11 +68,11 @@ export const Grid = props => {
 
         const topLeftImage =
             (block.imageAlign === 'top' || block.imageAlign === 'left') &&
-            renderBlockImage(block.image, block.imageLink, block.imageAlt)
+            renderBlockImage(block.image, block.imageAlt)
 
         const bottomRightImage =
             (block.imageAlign === 'bottom' || block.imageAlign === 'right') &&
-            renderBlockImage(block.image, block.imageLink, block.imageAlt)
+            renderBlockImage(block.image, block.imageAlt)
 
         return (
             <div className={blockClasses} key={block.title}>

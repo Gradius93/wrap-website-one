@@ -38,7 +38,7 @@ body {
 
 .homeContainer .homeWrapper {
   padding: 2em 10px;
-  min-height: 500px;
+  min-height: 550px;
 }
 
 .homeContainer .homeWrapper .wrapper {
@@ -92,6 +92,23 @@ body {
   padding-bottom: 20px
 }
 
+@media only screen and (min-width: 300px) {
+  .productTitle {
+    font-size: 300%;
+    margin: 0.3em 0;
+  }
+
+  .homeContainer .homeWrapper .productLogo img {
+    height: 200px;
+    margin-bottom: 10px;
+  }
+
+  .homeContainer .homeWrapper {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
 @media only screen and (min-width: 480px) {
   .productTitle {
     font-size: 300%;
@@ -108,6 +125,8 @@ body {
     padding-right: 10px;
   }
 }
+
+
 
 @media only screen and (min-width: 736px) {
   .homeContainer .homeWrapper {
@@ -181,6 +200,12 @@ body {
   padding-top: 80px;
 }
 
+@media only screen and (min-width: 300px) {
+  .pTop {
+    padding-top: 40px;
+  }
+}
+
 .wrapButton {
   border: 3px solid #FFD000;
   text-decoration: none;
@@ -240,6 +265,13 @@ body {
   border: 3px solid #ffd000;
 }
 
+@media only screen and (min-width: 300px) {
+  .wraponomicsButton {
+    display: flex;
+    width: 70%;
+  }
+
+}
 
 .gridBlock {
   padding: 0;
@@ -256,6 +288,13 @@ body {
 .gridBlock .threeByGridBlock img,
 .gridBlock .twoByGridBlock img {
   max-width: 100%;
+
+}
+
+@media only screen and (min-width: 300px) {
+  .gridBlock .sevenByGridBlock img {
+    max-width: 30%;
+  }
 
 }
 
@@ -338,9 +377,11 @@ body {
   max-width: 730px;
 }
 
+
 .imageAlignSide .blockImage {
   flex: 0 1 500px;
   max-width: 500px;
+  margin-top: 30px;
 }
 
 @media only screen and (max-width: 735px) {
@@ -382,9 +423,19 @@ body {
 }
 
 .block-container .gridBlock .blockContent p {
-  padding: 0;
+  padding: 20px 0;
 }
 
+.block-container .gridBlock .blockContent h2 {
+  padding-top: 20px;
+}
+
+
+@media only screen and (min-width: 300px) {
+  .block-container .gridBlock .blockContent h2 {
+    justify-content: center;
+  }
+}
 .block-container .wrapper .alignCenter h2 {
   text-align: center;
 }
@@ -404,6 +455,7 @@ body {
   padding-right: 1rem;
   padding-right: var(--ifm-spacing-horizontal);
   width: 100%;
+  margin-bottom: 40px;
 }
 
 
@@ -477,8 +529,24 @@ details > summary {
 }
 
 .tokens-line img {
-  max-width: 120px;
+  width: 100%;
+  height: 100%;
 }
+
+@media only screen and (min-width: 300px) {
+
+  .tokens-line img {
+    max-width: 50px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+
+  .tokens-line img {
+    max-width: 100px;
+  }
+}
+
 
 .footer {
   text-decoration: none;
